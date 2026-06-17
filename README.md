@@ -1,6 +1,6 @@
 # Portfolio — Data Analyst
 
-> Parcours **Data Analyst** (OpenClassrooms × ENSAE) — certification professionnelle **RNCP niveau 6 (Bac+3/4)**.
+> Parcours **Data Analyst** (OpenClassrooms) — certification professionnelle **RNCP niveau 6 (Bac+3/4)**.
 > Ce dépôt regroupe les projets réalisés au cours de la formation : préparation, analyse, modélisation et restitution de données dans des contextes métier concrets.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -60,19 +60,33 @@ Data Analyst formé par la pratique, à l'aise sur l'ensemble de la chaîne de l
 
 ## Projets phares
 
-### 🔎 Projet 10 — Détection de faux billets
+### 🧹 Projet 5 — Gestion des données d'une boutique
 
-**Contexte.** Construire un système de détection automatique de faux billets pour l'ONCFM (Organisation nationale de lutte contre le faux-monnayage), à partir des dimensions géométriques des billets.
+**Contexte.** Une entreprise dispose de données mal organisées, réparties sur plusieurs jeux hétérogènes. L'objectif : les faire cohabiter pour produire l'analyse demandée.
 
 **Démarche.**
-- Nettoyage et analyse exploratoire d'un jeu de 1 500 billets
-- Deux approches comparées : **régression logistique** (supervisée) et **K-Means** (non supervisée)
-- Optimisation des hyperparamètres par `GridSearchCV` (`scoring='accuracy'`)
-- Industrialisation : fonction `detecter_faux_billets()` produisant un fichier de prédictions exportable
+- Rapprochement et fusion de jeux de données issus de sources différentes
+- Nettoyage approfondi : détection et traitement des erreurs et incohérences
+- Classification des types de données et analyse univariée pour interpréter les variables
 
-**Résultat.** Sur le jeu de test final, les deux modèles aboutissent à une **concordance de 5/5** (3 faux billets, 2 authentiques), confirmant la robustesse de l'approche.
+**Résultat.** [Ajoute ici ton résultat clé — ex. nombre d'incohérences corrigées, livrable produit.]
 
-**Stack.** Python · Pandas · scikit-learn · Matplotlib / Seaborn
+**Stack.** Python · Pandas
+
+---
+
+### 📈 Projet 6 — Analyse des ventes d'une librairie
+
+**Contexte.** Analyser les comportements d'achat des clients d'une librairie à partir de l'ensemble des données de vente, afin de répondre à des questions métier précises.
+
+**Démarche.**
+- Analyse bivariée et étude des corrélations entre variables
+- Tests statistiques pour valider ou rejeter les hypothèses
+- Analyse de séries temporelles sur l'évolution du chiffre d'affaires
+
+**Résultat.** [Ajoute ici un insight marquant — ex. corrélation significative identifiée, tendance saisonnière.]
+
+**Stack.** Python · Pandas · SciPy
 
 ---
 
@@ -88,6 +102,22 @@ Data Analyst formé par la pratique, à l'aise sur l'ensemble de la chaîne de l
 **Résultat.** Identification du cluster prioritaire sur la base du volume d'importation absolu (≈ 5,8× supérieur aux autres segments), au-delà du seul score d'attractivité par habitant.
 
 **Stack.** Python · Pandas · scikit-learn · SciPy
+
+---
+
+### 🔎 Projet 10 — Détection de faux billets
+
+**Contexte.** Construire un système de détection automatique de faux billets pour l'ONCFM (Organisation nationale de lutte contre le faux-monnayage), à partir des dimensions géométriques des billets.
+
+**Démarche.**
+- Nettoyage et analyse exploratoire d'un jeu de 1 500 billets
+- Deux approches comparées : **régression logistique** (supervisée) et **K-Means** (non supervisée)
+- Optimisation des hyperparamètres par `GridSearchCV` (`scoring='accuracy'`)
+- Industrialisation : fonction `detecter_faux_billets()` produisant un fichier de prédictions exportable
+
+**Résultat.** Sur le jeu de test final, les deux modèles aboutissent à une **concordance de 5/5** (3 faux billets, 2 authentiques), confirmant la robustesse de l'approche.
+
+**Stack.** Python · Pandas · scikit-learn · Matplotlib / Seaborn
 
 ---
 
@@ -108,6 +138,6 @@ p10-detection-faux-billets-oncfm/
 
 ## Certification
 
-**Data Analyst** — OpenClassrooms, en partenariat avec l'**ENSAE**.
+**Data Analyst** — OpenClassrooms.
 Certification professionnelle enregistrée au **RNCP**, niveau 6 (Bac+3/4).
 10 projets · 804 heures de formation supervisée.
